@@ -1,6 +1,0 @@
-HUGO_VERSION = "0.123.0"
-TZ = "America/New_York"
-
-[build]
-publish = "public"
-command = "hugo"
