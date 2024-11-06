@@ -1,23 +1,169 @@
 baseURL = '/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'en-US'
+title = 'Andre Franca'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+enableRobotsTXT = true
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+[params]
+  [params.user]
+    name = 'Andre Franca'
+    email = 'hello@privatemail.slmail.me'
+    gitProfile = 'https://github.com/a-franca'
+    mastodonUrl = 'https://mas.to/@abf'
+    mastodonHandle = 'abf@mas.to'
+    [params.user.avatar]
+      picture = 'images/avatar/author.png'
+      pictureWidth = '230'
+      pictureHeight = '230'
+  [params.general]
+    description = 'The personal blog of Andre Franca'
+    tagline = 'A technology enthusiast'
+    rssFeed = '/feed.xml'
+    sitemap = '/sitemap.xml'
+    sourceCode = 'https://github.com/a-franca/website'
+    wordsPerMinute = 200
+    codeLicense = 'MIT'
+    codeLicenseUrl = 'https://github.com/a-franca/website/raw/main/LICENSE'
+    contentLicense = 'CC BY-NC-SA 4.0'
+    contentLicenseUrl = 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+    [params.general.seo]
+      favicon = 'images/favicons/favicon-32x32.png'
+      logo = '/images/feature/brutal-logo.webp'
+      logoWidth = '512'
+      logoHeight = '512'
+      logoAlt = 'Brutal Website Logo'
+      featureImage = '/images/feature/brutal-feature-image.webp'
+      featureWidth = '1369'
+      featureHeight = '720'
+      featureAlt = 'Brutal Feature Image'
 
 [module]
   [module.hugoVersion]
-    extended = false
-    min = "0.123.0"
+    extended = true
+    min = '0.136.0'
+
+[permalinks]
+  posts = '/posts/:slug/'
+
+[privacy]
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+[outputs]
+  home = ['html', 'rss', 'blogroll']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+  
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+  [outputFormats.sitemap]
+    mediatype = "application/xml"
+    basename = "sitemap"
+  [outputFormats.sitemapxsl]
+    baseName = "sitemap"
+    mediaType = "application/xslt+xml"
+    isPlainText = true
+  [outputFormats.rssxsl]
+    baseName = "feed"
+    mediaType = "application/xslt+xml"
+    isPlainText = true
+  [outputFormats.blogroll]
+    mediatype = "application/xml"
+    basename = "blogroll"
+
+[mediaTypes]
+  [mediaTypes."application/xslt+xml"]
+    suffixes = ["xsl"]
+  [mediaTypes."application/xml"]
+    suffixes = ["opml"]
+
+[taxonomies]
+  tag = "tags"
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 1
+
+    [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 2
+
+    [[menus.main]]
+    name = 'More'
+    pageRef = '/more'
+    weight = 3
+
+# markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = 'monokai' # Choose a style from Chroma styles
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = false
+  [markup.goldmark]
+    duplicateResourceFiles = false
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      [markup.goldmark.extensions.cjk]
+        eastAsianLineBreaks = false
+        eastAsianLineBreaksStyle = 'simple'
+        enable = false
+        escapedSpace = false
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.delete]
+          enable = false
+        [markup.goldmark.extensions.extras.insert]
+          enable = false
+        [markup.goldmark.extensions.extras.mark]
+          enable = false
+        [markup.goldmark.extensions.extras.subscript]
+          enable = false
+        [markup.goldmark.extensions.extras.superscript]
+          enable = false
+      [markup.goldmark.extensions.passthrough]
+        enable = false
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = []
+          inline = []
+      [markup.goldmark.extensions.typographer]
+        apostrophe = '&rsquo;'
+        disable = false
+        ellipsis = '&hellip;'
+        emDash = '&mdash;'
+        enDash = '&ndash;'
+        leftAngleQuote = '&laquo;'
+        leftDoubleQuote = '&ldquo;'
+        leftSingleQuote = '&lsquo;'
+        rightAngleQuote = '&raquo;'
+        rightDoubleQuote = '&rdquo;'
+        rightSingleQuote = '&rsquo;'
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.image]
+        enableDefault = false
+      [markup.goldmark.renderHooks.link]
+        enableDefault = false
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = true
