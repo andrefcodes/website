@@ -20,4 +20,47 @@
 <meta name="twitter:url" content="{{ .Permalink }}">
 
 <!-- JSON Linked Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"{{ if in .Permalink "/posts/" }}Article{{ else }}Website{{ end }}","name":"{{ .Title }}","headline":"{{ .Title }}","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}","keywords":{{ with .Params.tags }}[{{ delimit . ", " }}]{{ end }},"url":"{{ .Permalink }}","datePublished":"{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}","image":{"@type":"ImageObject","url":"{{ .Site.Params.General.Seo.featureImage | absURL }}","width":{{ .Site.Params.General.Seo.featureWidth }},"height":{{ .Site.Params.General.Seo.featureHeight }}},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":{"@type":"ImageObject","url":"{{ .Site.Params.General.Seo.logo | absURL }}","width":{{ .Site.Params.General.Seo.logoWidth }},"height":{{ .Site.Params.General.Seo.logoHeight }}}},"author":{"@type":"Person","name":"{{ .Site.Params.User.name }}","url":"{{ .Site.BaseURL }}","sameAs":[{{ delimit (slice .Site.Params.User.mastodonUrl .Site.Params.User.gitProfile) ", " }}],"image":{"@type":"ImageObject","url":"{{ .Site.Params.User.Avatar.picture | absURL }}","width":{{ .Site.Params.User.Avatar.pictureWidth }},"height":{{ .Site.Params.User.Avatar.pictureHeight }}}},"mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Site.BaseURL }}"}}</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "{{ if in .Permalink "/posts/" }}Article{{ else }}Website{{ end }}",
+    "name": "{{ .Title }}",
+    "headline": "{{ .Title }}",
+    "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}",
+    "url": "{{ .Permalink | jsonify}}",
+    "datePublished": "{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.Params.General.Seo.featureImage | absURL }}",
+        "width": {{ .Site.Params.General.Seo.featureWidth }},
+        "height": {{ .Site.Params.General.Seo.featureHeight }}
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.General.Seo.logo | absURL }}",
+            "width": {{ .Site.Params.General.Seo.logoWidth }},
+            "height": {{ .Site.Params.General.Seo.logoHeight }}
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.User.name }}",
+        "url": "{{ .Site.BaseURL }}",
+        "sameAs": [{{ .Site.Params.User.mastodonUrl }}, {{ .Site.Params.User.gitProfile }}],
+        "image": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.User.Avatar.picture | absURL }}",
+            "width": {{ .Site.Params.User.Avatar.pictureWidth }},
+            "height": {{ .Site.Params.User.Avatar.pictureHeight }}
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Site.BaseURL }}"
+    }
+}
+</script>
