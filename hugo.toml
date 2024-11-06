@@ -27,7 +27,7 @@ enableRobotsTXT = true
     contentLicense = 'CC BY-NC-SA 4.0'
     contentLicenseUrl = 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
     [params.general.seo]
-      favicon = 'images/favicons/favicon-32x32.png'
+      favicon = '/images/favicons/favicon-32x32.png'
       logo = '/images/feature/brutal-logo.webp'
       logoWidth = '512'
       logoHeight = '512'
