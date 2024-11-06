@@ -1,5 +1,25 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.User.name }}">
+<link rel="license" href="/#license">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{ partial "favicon.html" . }}
+
+<!-- Include CSS file -->
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+{{ partial "seo.html" . }}
+
+<!-- Feed -->
+<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed }}" title="{{ .Site.Title }}'s RSS Feed">
+
+<!-- Sitemap -->
+<link rel="sitemap" type="application/xml" href="{{ .Site.Params.General.sitemap }}" title="Sitemap">
+
+<!-- Darktheme -->
+<meta name="color-scheme" content="dark light">

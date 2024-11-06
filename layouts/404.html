@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+
+<body>
+    <main>
+        <h1>Page Not Found</h1>
+
+        <p>Sorry, this URL is pointing to something that doesn't exist.<br />
+        <a href="{{ .Site.BaseURL }}" title="Home">Head back home</a> to try finding it again.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<div class="reading-time">
+  {{ $words := .WordCount }}
+  {{ $wpm := .Site.Params.General.wordsPerMinute | default 200 }}
+  {{ $minutes := div $words $wpm }}
+  {{ if lt $minutes 1 }}
+    Reading Time: Less than a minute
+  {{ else if eq $minutes 1 }}
+    Reading Time: 1 minute
+  {{ else }}
+    Reading Time: {{ $minutes }} minutes
+  {{ end }}
+</div>

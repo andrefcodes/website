@@ -1,0 +1,12 @@
+{{- $page := .page }}
+{{- $taxonomy := .taxonomy }}
+  
+{{- with $page.GetTerms $taxonomy }}
+  {{- $label := (index . 0).Parent.LinkTitle }}
+    <div class="postTags">
+      <h2>{{ $label }}:</h2>
+      {{- range . }}
+      <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>&emsp;
+      {{- end }}
+    </div>
+{{- end }}

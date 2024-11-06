@@ -1,0 +1,26 @@
+{{ $totalTags := len .Site.Taxonomies.tags }}
+{{ $totalPosts := len (where .Site.RegularPages "Section" "posts") }}
+{{ $totalWords := 0 }}
+{{ $postsByYear := dict }}
+
+{{ range (where .Site.RegularPages "Section" "posts") }}
+  {{ $totalWords = add $totalWords (len (split .Plain " ")) }}
+  {{ $year := .Date.Format "2006" }}
+  {{ $postsByYear = merge $postsByYear (dict $year (add (index $postsByYear $year | default 0) 1)) }}
+{{ end }}
+
+{{ $averageWordsPerPost := div $totalWords $totalPosts }}
+
+<div>
+  <p><strong>Total Tags:</strong> {{ $totalTags }}<br />
+  <strong>Total Words:</strong> {{ $totalWords }}<br />
+  <strong>Average Words per Post:</strong> {{ $averageWordsPerPost }}<br />
+  <strong>Total Posts</strong>: {{ $totalPosts }}<br />
+  <strong>Posts by Year:</strong></p>
+  <ul>
+    {{ range $year, $count := $postsByYear }}
+      <li><strong>{{ $year }}:</strong> {{ $count }}</li>
+    {{ end }}
+  </ul>
+</div>
+

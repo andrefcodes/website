@@ -1,0 +1,8 @@
+{{ $currentDate := now }}
+{{ $postYear := .Date }}
+{{ $age := div (sub $currentDate.Unix $postYear.Unix) 86400 }}
+{{ if ge $age 730 }}
+<p class="info">⚠ This post is over {{ div $age 365 }} years old and may contain outdated opinions, broken links, or incorrect information.</p>
+{{ else if ge $age 365 }}
+<p class="info">⚠ This post is over 1 year old and may contain outdated opinions, broken links, or incorrect information.</p>
+{{ end }}

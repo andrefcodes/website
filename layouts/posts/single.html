@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ partial "pageDate.html" . }}
+
+  {{ partial "readingTime.html" . }}
+
+  {{ partial "outdated.html" . }}
+
+  {{ .Content }}
+
+  {{ partial "tags.html" (dict "taxonomy" "tags" "page" . ) }}
+
+  {{ partial "postNotice.html" . }}
+
+  {{ partial "postNavigation.html" .}}
+
+  {{ partial "openring-out.html" . }}
+
+{{ end }}

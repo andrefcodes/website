@@ -1,7 +1,4 @@
-{{ define "main" }}
-  <h1>#{{ .Title }}</h1>
-  {{ .Content }}
-  <section>
+<section>
     <table>
       <thead>
         <tr>
@@ -10,7 +7,7 @@
         </tr>
       </thead> 
       <tbody>
-        {{ range .Pages }}
+        {{ range (where .Site.RegularPages "Section" "posts") }}
         <tr>
           <td>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -23,4 +20,3 @@
       </tbody>
     </table>
   </section>
-{{ end }}

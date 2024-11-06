@@ -1,0 +1,12 @@
+{{- printf "<?xml version\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
+<opml version="2.0">
+    <head>
+        <title>RSS Feeds for {{ .Site.Title }}'s Blogroll</title>
+        <dateCreated>{{ now.Format "January 2, 2006" }}</dateCreated>
+    </head>
+    <body>{{ $blogroll := .Site.Data.blogroll }}
+        <outline text="{{ .Site.Title }}'s Blogroll">{{ range $blogroll }}            
+            <outline title="{{ .name }}" text="{{ .name }}" xmlUrl="{{ .rss }}" htmlUrl="{{ .link }}"></outline>{{ end }}
+        </outline>
+    </body>
+</opml>

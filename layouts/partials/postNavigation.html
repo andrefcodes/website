@@ -1,0 +1,10 @@
+  <!-- Previous/Next Post Section -->
+  <div class="post-nav">
+    {{ if .Prev }}
+      <p>&lt;~ Previous: <a href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a></p>
+    {{ end }}
+    {{ if .Next }}
+      <p>~&gt; Next: <a href="{{ .Next.Permalink }}">{{ .Next.Title }}</a></p>
+    {{ end }}
+</div>
+<!-- End Previous/Next Post Section -->
