@@ -7,14 +7,14 @@ draft = false
 
 [**Archive**](/posts/): All published posts over time.
 
-[**Blogroll**](/blogroll): My favorite blogs around the World Wide Web.
-
-[**RSS**](/feed.xml) Feed: This is the best way to follow me.
+[**Search**](/search): Looking for something? This is good place where to start.
 
 [**Tags**](/tags): Look up posts by tags.
+
+[**Blogroll**](/blogroll): My favorite blogs around the World Wide Web.
 
 [**Uses**](/uses): Collection of hardware and software I currently use.
 
 [**Contact**](/#contact): If you want to get in touch regarding a post in this blog.
 
-[**Search**](/search): Looking for something? This is good place where to start.
+[**RSS Feed**](/feed.xml): This is the best way to follow me.
