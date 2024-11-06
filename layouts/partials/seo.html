@@ -1,7 +1,7 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
-<meta property="og:image" content="{{ .Site.Params.General.Seo.featureImage }}">
+<meta property="og:image" content="{{ .Site.Params.General.Seo.featureImage | absURL }}">
 <meta property="og:image:height" content="{{ .Site.Params.General.Seo.featureHeight }}">
 <meta property="og:image:width" content="{{ .Site.Params.General.Seo.featureWidth }}">
 <meta property="og:image:alt" content="{{ .Site.Params.General.Seo.featureAlt }}">
@@ -13,11 +13,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
-<meta property="twitter:image" content="{{ .Site.Params.General.Seo.featureImage }}">
+<meta property="twitter:image" content="{{ .Site.Params.General.Seo.featureImage | absURL }}">
 <meta property="twitter:image:height" content="{{ .Site.Params.General.Seo.featureHeight }}">
 <meta property="twitter:image:width" content="{{ .Site.Params.General.Seo.featureWidth }}">
 <meta property="twitter:image:alt" content="{{ .Site.Params.General.Seo.featureAlt }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
 
 <!-- JSON Linked Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"{{ if in .Permalink "/posts/" }}Article{{ else }}Website{{ end }}","name":"{{ .Title }}","headline":"{{ .Title }}","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}","keywords":{{ with .Params.tags }}[{{ delimit . ", " }}]{{ end }},"url":"{{ .Permalink }}","datePublished":"{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}","image":{"@type":"ImageObject","url":"{{ .Site.Params.General.Seo.featureImage }}","width":{{ .Site.Params.General.Seo.featureWidth }},"height":{{ .Site.Params.General.Seo.featureHeight }}},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":{"@type":"ImageObject","url":"{{ .Site.Params.General.Seo.logo }}","width":{{ .Site.Params.General.Seo.logoWidth }},"height":{{ .Site.Params.General.Seo.logoHeight }}}},"author":{"@type":"Person","name":"{{ .Site.Params.User.name }}","url":"{{ .Site.BaseURL }}","sameAs":[{{ delimit (slice .Site.Params.User.mastodonUrl .Site.Params.User.gitProfile) ", " }}],"image":{"@type":"ImageObject","url":"{{ .Site.Params.User.Avatar.picture }}","width":{{ .Site.Params.User.Avatar.pictureWidth }},"height":{{ .Site.Params.User.Avatar.pictureHeight }}}},"mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Site.BaseURL }}"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"{{ if in .Permalink "/posts/" }}Article{{ else }}Website{{ end }}","name":"{{ .Title }}","headline":"{{ .Title }}","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}","keywords":{{ with .Params.tags }}[{{ delimit . ", " }}]{{ end }},"url":"{{ .Permalink }}","datePublished":"{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}","image":{"@type":"ImageObject","url":"{{ .Site.Params.General.Seo.featureImage | absURL }}","width":{{ .Site.Params.General.Seo.featureWidth }},"height":{{ .Site.Params.General.Seo.featureHeight }}},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":{"@type":"ImageObject","url":"{{ .Site.Params.General.Seo.logo | absURL }}","width":{{ .Site.Params.General.Seo.logoWidth }},"height":{{ .Site.Params.General.Seo.logoHeight }}}},"author":{"@type":"Person","name":"{{ .Site.Params.User.name }}","url":"{{ .Site.BaseURL }}","sameAs":[{{ delimit (slice .Site.Params.User.mastodonUrl .Site.Params.User.gitProfile) ", " }}],"image":{"@type":"ImageObject","url":"{{ .Site.Params.User.Avatar.picture | absURL }}","width":{{ .Site.Params.User.Avatar.pictureWidth }},"height":{{ .Site.Params.User.Avatar.pictureHeight }}}},"mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Site.BaseURL }}"}}</script>

@@ -5,7 +5,7 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.User.name }}">
-<link rel="license" href="/#license">
+<link rel="license" href="{{ "/#license" | absURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{ partial "favicon.html" . }}
@@ -16,10 +16,10 @@
 {{ partial "seo.html" . }}
 
 <!-- Feed -->
-<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed }}" title="{{ .Site.Title }}'s RSS Feed">
+<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed | absURL }}" title="{{ .Site.Title }}'s RSS Feed">
 
 <!-- Sitemap -->
-<link rel="sitemap" type="application/xml" href="{{ .Site.Params.General.sitemap }}" title="Sitemap">
+<link rel="sitemap" type="application/xml" href="{{ .Site.Params.General.sitemap | absURL }}" title="Sitemap">
 
 <!-- Darktheme -->
 <meta name="color-scheme" content="dark light">
