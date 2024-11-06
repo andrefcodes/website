@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Bradley Taunt",
+        "link": "https://btxx.org/",
+        "rss": "https://btxx.org/index.rss",
+        "description": "Collection of his personal brain dumps about open source software, usability, privacy, and minimal design."
+    },
+    {
+        "name": "Max Böck",
+        "link": "https://mxb.dev/",
+        "rss": "https://mxb.dev/feed.xml",
+        "description": "Writes about web development and design."
+    },
+    {
+        "name": "Julia Evans",
+        "link": "https://jvns.ca/",
+        "rss": "https://jvns.ca/atom.xml",
+        "description": "All kind of technologies, linux, and computer tools posts."
+    },
+    {
+        "name": "Manuel Moreale",
+        "link": "https://manuelmoreale.com/",
+        "rss": "https://manuelmoreale.com/feed/rss",
+        "description": "Web developer, writing all kinds of interesting technology, IndieWeb, social and community posts."
+    },
+    {
+        "name": "Kev Quirk",
+        "link": "https://kevquirk.com/",
+        "rss": "https://kevquirk.com/feed",
+        "description": "Co-founder of Fosstodon.org (a Mastodon instance), Kev writes about blogging, web design, among other things."
+    },
+    {
+        "name": "The New Oil",
+        "link": "https://blog.thenewoil.org/",
+        "rss": "https://blog.thenewoil.org/feed",
+        "description": "Great content over privacy and security."
+    }
+]
