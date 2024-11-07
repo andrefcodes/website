@@ -34,7 +34,7 @@
 {{/* {{- printf "<?xml-stylesheet href=\"/feed.xsl\" type=\"text/xsl\"?>" | safeHTML }} */}}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" {{/* xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"*/}}>
   <channel>
-    <title>{{ .Site.Title }}{{ "'s RSS Feed" | transform.XMLEscape | safeHTML }}</title>
+    <title>{{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ "Recent Content on my Website" }}</description>
     <image>
