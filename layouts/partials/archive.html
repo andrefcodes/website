@@ -1,22 +1,27 @@
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $postsByMonth := $posts.GroupByDate "2006" }}
+{{ range sort $postsByMonth "Key" "desc" }}
 <div>
-    <table>
-      <thead>
-        <tr>
-          <th>Content</th>
-          <th style="text-align: center; white-space: nowrap;">Published</th>
-        </tr>
-      </thead> 
-      <tbody>
-        {{ range (where .Site.RegularPages "Section" "posts") }}
-        <tr>
-          <td>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </td>
-          <td style="text-align: center; white-space: nowrap; width: 50px;">
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-          </td>
-        </tr>
-        {{ end }}
-      </tbody>
-    </table>
-  </div>
+  <h3>~{{ .Key }}</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th style="text-align: center; white-space: nowrap;">Published</th>
+      </tr>
+    </thead> 
+    <tbody>
+      {{ range .Pages }}
+      <tr>
+        <td>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </td>
+        <td style="text-align: center; white-space: nowrap; width: 50px;">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}
