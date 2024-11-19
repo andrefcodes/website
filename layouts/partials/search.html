@@ -30,7 +30,7 @@
     function lunr_search(term) {
         document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
         if(term) {
-            document.getElementById('lunrsearchresults').innerHTML = '<p>Search results for "<b>' + term + '</b>"</p>' + document.getElementById('lunrsearchresults').innerHTML;
+            document.getElementById('lunrsearchresults').innerHTML = '<h3>Search results for "' + term + '"</h3>' + document.getElementById('lunrsearchresults').innerHTML;
             //put results on the screen.
             var results = idx.search(term);
             if(results.length>0){
@@ -51,7 +51,7 @@
     }
 </script>
 
-<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" style="padding-bottom: 0.5em;">
     <p><input type="text" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type your search here..." /></p>
 </form>
 <div id="lunrsearchresults">
