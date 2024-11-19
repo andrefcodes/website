@@ -48,7 +48,7 @@ By that time, I was getting a bit disappointed, and I headed to Lenovo website t
 
 Just by curiosity, looking at the gaming laptops section, I got impressed to find pretty decent machines with fair prices, including the one from where I'm writing this post, a Lenovo Legion i5 Pro Gen7.
 
-{{< img "Image of a Lenovo Legion 5i Pro Gen7 Laptop" "/images/general/014943be-72c4-490e-82fa-1fff17d16c8a.webp" >}}
+{{< img "Image of a Lenovo Legion 5i Pro Gen7 Laptop" "014943be-72c4-490e-82fa-1fff17d16c8a.webp" >}}
 *Lenovo Legion 5i Pro Gen7 Laptop*
 
 This laptop has been amazing so far. Its estimated price is $1,789.99, however I paid $1,364.79 (including tax). Here are my specs:
