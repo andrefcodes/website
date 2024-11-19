@@ -7,7 +7,9 @@
 
   {{ partial "outdated.html" . }}
 
-  {{ .Content }}
+  <div class="content">
+    {{ .Content }}
+  </div>
 
   {{ partial "tags.html" (dict "taxonomy" "tags" "page" . ) }}
 
