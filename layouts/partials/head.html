@@ -16,8 +16,9 @@
 
 {{ partial "seo.html" . }}
 
-<!-- Feed -->
+<!-- Feeds -->
 <link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed | absURL }}" title="{{ .Site.Title }}'s RSS Feed">
+<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.notesFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
 
 <!-- Sitemap -->
 <link rel="sitemap" type="application/xml" href="{{ .Site.Params.General.sitemap | absURL }}" title="Sitemap">
