@@ -1,0 +1,12 @@
+<!-- Previous/Next Notes Section -->
+{{ if or .PrevInSection .NextInSection }}
+  <div class="notes-nav">
+    {{ if .PrevInSection }}
+      {{ with .PrevInSection }}<a class="notes-prev" href="{{ .Permalink }}">&lt;~ Previous</a>{{ end }}
+    {{ end }}
+    {{ if .NextInSection }}
+      {{ with .NextInSection }}<a class="notes-next" href="{{ .Permalink }}">Next ~&gt;</a>{{ end }}
+    {{ end}}
+</div>
+{{ end }}
+<!-- End Previous/Next Notes Section -->
