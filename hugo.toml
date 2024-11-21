@@ -4,6 +4,9 @@ title = 'Andre Franca'
 
 enableRobotsTXT = true
 
+[pagination]
+  pagerSize = 5
+
 [params]
   [params.user]
     name = 'Andre Franca'
@@ -19,6 +22,7 @@ enableRobotsTXT = true
     description = 'The personal blog of Andre Franca'
     tagline = 'A technology enthusiast'
     rssFeed = '/feed.xml'
+    notesFeed = '/notes.xml'
     sitemap = '/sitemap.xml'
     sourceCode = 'https://github.com/a-franca/website'
     wordsPerMinute = 200
@@ -51,7 +55,7 @@ enableRobotsTXT = true
     privacyEnhanced = true
 
 [outputs]
-  home = ['html', 'rss', 'blogroll']
+  home = ['html', 'rss', 'rssnotes', 'blogroll']
   section = ['html']
   taxonomy = ['html']
   term = ['html']
@@ -60,6 +64,10 @@ enableRobotsTXT = true
   [outputFormats.RSS]
     mediatype = "application/rss+xml"
     baseName = "feed"
+  [outputFormats.RSSNotes]
+    name = "RSSNotes"
+    mediaType = "application/rss+xml"
+    baseName = "notes"
   [outputFormats.sitemap]
     mediatype = "application/xml"
     basename = "sitemap"
