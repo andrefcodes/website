@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+<div class="notes-content">
+  {{ .Content }}
+</div>
+
+  {{ partial "postNotice.html" . }}
+
+  {{ partial "notesNavigation.html" .}}
+
+{{ end }}

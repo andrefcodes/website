@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <div class="content">
+    {{ range .Paginator.Pages }}
+      <div class="note-card">
+        <span class="span-note"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
+        {{ .Content | safeHTML }}
+      </div>
+    {{ end }}
+  </div>
+  {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+    <div class="notes-nav">
+      {{ if .Paginator.HasPrev }}
+        <a class="notes-prev" href="{{ .Paginator.Prev.URL }}">&lt;~ Newest</a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <a class="notes-next" href="{{ .Paginator.Next.URL }}">Oldest ~&gt;</a>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
