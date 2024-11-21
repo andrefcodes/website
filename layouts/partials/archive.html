@@ -1,8 +1,8 @@
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
 {{ $postsByMonth := $posts.GroupByDate "2006" }}
-{{ range sort $postsByMonth "Key" "desc" }}
-<div>
-  <h3>~{{ .Key }}</h3>
+{{ range $index, $element := sort $postsByMonth "Key" "desc" }}
+<details {{ if eq $index 0 }}open{{ end }}>
+  <summary>~{{ $element.Key }}</summary>
   <table>
     <thead>
       <tr>
@@ -11,7 +11,7 @@
       </tr>
     </thead> 
     <tbody>
-      {{ range .Pages }}
+      {{ range $element.Pages }}
       <tr>
         <td>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -23,5 +23,5 @@
       {{ end }}
     </tbody>
   </table>
-</div>
+</details>
 {{ end }}
