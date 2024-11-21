@@ -3,7 +3,7 @@ title = 'Home'
 draft = false
 +++
 
-<h1>Hey, I'm Andre,<br />and this is my personal blog.</h1>
+<h1>Hey, my name is Andre,<br />and this is my personal blog.</h1>
 
 Here, you will see me writing about things I love and my thoughts on different topics, specially technology, of which I am a great enthusiast by the way.
 
