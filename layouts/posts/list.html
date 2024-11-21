@@ -2,6 +2,7 @@
   <h1>{{ .Title }}</h1>
   <div class="content">
     {{ .Content }}
+
+    {{ partial "archive.html" .}}
   </div>
-  {{ partial "archive.html" .}}
 {{ end }}
