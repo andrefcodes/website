@@ -1,1 +1,8 @@
-<img src="{{ .Get 1 }}" alt="{{ .Get 0 }}" loading="lazy" />
+{{- $u := urls.Parse (.Get 1) -}}
+{{- $src := $u.String -}}
+{{- if not $u.IsAbs -}}
+  {{- with or (.Page.Resources.Get $u.Path) (resources.Get $u.Path) -}}
+    {{- $src = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $src }}" alt="{{ .Get 0 }}" loading="lazy" />
