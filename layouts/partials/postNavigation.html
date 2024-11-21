@@ -1,6 +1,8 @@
-  <!-- Previous/Next Post Section -->
+<!-- Previous/Next Post Section -->
+{{ if or .PrevInSection .NextInSection }}
   <div class="post-nav">
     {{ if .PrevInSection }}<p>&lt;~ Previous: {{ with .PrevInSection }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}</p>{{ end }}
-      {{ if .NextInSection }}<p>~&gt; Next: {{ with .NextInSection }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}</p>{{ end}}
-</div>
+    {{ if .NextInSection }}<p>~&gt; Next: {{ with .NextInSection }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}</p>{{ end}}
+  </div>
+{{ end }}
 <!-- End Previous/Next Post Section -->
