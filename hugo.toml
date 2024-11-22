@@ -48,6 +48,7 @@ enableRobotsTXT = true
 
 [permalinks]
   posts = '/posts/:slug/'
+  notes = '/notes/:filename/'
 
 [privacy]
   [privacy.youtube]
