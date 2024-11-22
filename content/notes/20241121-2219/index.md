@@ -1,6 +1,6 @@
 +++
-title = "21 November 2024 at 22:09"
-date = 2024-11-21T22:09:02-03:00
+title = "21 November 2024 at 22:19"
+date = 2024-11-21T22:19:31-03:00
 tags = ['notes']
 draft = false
 +++
