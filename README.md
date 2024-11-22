@@ -6,9 +6,9 @@ This site was created using [Hugo](https://gohugo.io/), and it's hosted on [Clou
 
 See:
 
-* [Latest Posts](https://abf.li/#latest-posts)
+* [Latest Posts](https://abf.li/) / [Latest Notes](https://abf.li/notes)
 
-* [RSS Feed](https://abf.li/feed.xml)
+* [Posts RSS feed](https://abf.li/feed.xml) / [Notes RSS Feed](https://abf.li/notes.xml)
 
 # License
 
