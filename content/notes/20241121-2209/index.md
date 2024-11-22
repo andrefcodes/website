@@ -1,6 +1,6 @@
 +++
 title = "21 November 2024 at 21:12"
-date = 2024-11-21T21:12:02-03:00
+date = 2024-11-21T22:09:02-03:00
 tags = ['notes']
 draft = false
 +++
