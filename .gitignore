@@ -3,6 +3,5 @@ public
 .DS_Store
 node_modules
 resources
-openring.sh
-note.sh
+Makefile
 drafts
