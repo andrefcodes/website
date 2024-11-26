@@ -95,9 +95,14 @@ enableRobotsTXT = true
     weight = 2
 
     [[menus.main]]
+    name = 'Notes'
+    pageRef = '/notes'
+    weight = 3
+
+    [[menus.main]]
     name = 'More'
     pageRef = '/more'
-    weight = 3
+    weight = 4
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
