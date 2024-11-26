@@ -10,6 +10,8 @@ See:
 
 * [Posts RSS feed](https://abf.li/feed.xml) / [Notes RSS Feed](https://abf.li/notes.xml)
 
+* [Follow me on Mastodon](https://mas.to/@abf)
+
 # License
 
 * Content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
