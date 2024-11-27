@@ -1,8 +1,8 @@
- backend:
-   name: github
-   repo: a-franca/website
-   branch: main
-   base_url: sveltia-cms-auth.abf.li
+backend:
+  name: github
+  repo: a-franca/website
+  branch: main
+  base_url: sveltia-cms-auth.abf-li.workers.dev
 
 site_url: https://abf.li
 
@@ -19,7 +19,15 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+      - label: 'Description'
+        name: 'description'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
