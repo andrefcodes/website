@@ -1,8 +1,22 @@
+# Hugo Files
+public/
+themes/
+resources/
+.Hugo/
 .hugo_build.lock
-public
+
+# OS specific files
 .DS_Store
-node_modules
-resources
+Thumbs.db
+
+# Build artifacts
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Custom files
 Makefile
 publish.sh
-drafts
+drafts/
