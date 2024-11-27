@@ -2,7 +2,7 @@ backend:
   name: github
   repo: a-franca/website
   branch: main
-  base_url: sveltia-cms-auth.abf-li.workers.dev
+  base_url: https://sveltia-cms-auth.abf-li.workers.dev
 
 site_url: https://abf.li
 
