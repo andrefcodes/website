@@ -1,6 +1,6 @@
  backend:
    name: github
-   repo: a-franca/sveltia-cms-auth
+   repo: a-franca/website
    branch: main
    base_url: sveltia-cms-auth.abf.li
 
