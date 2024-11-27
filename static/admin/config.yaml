@@ -1,0 +1,25 @@
+ backend:
+   name: github
+   repo: a-franca/sveltia-cms-auth
+   branch: main
+   base_url: sveltia-cms-auth.abf.li
+
+site_url: https://abf.li
+
+publish_mode: editorial_workflow
+media_folder: static/uploads
+public_folder: uploads
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'content/posts/{{year}}'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
