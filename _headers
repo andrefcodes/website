@@ -5,3 +5,4 @@
   Permissions-Policy: interest-cohort=(), microphone=(), geolocation=(), camera=(), autoplay=()
   Content-Security-Policy: default-src 'self' ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://unpkg.com; frame-src 'self' https://www.youtube-nocookie.com https://youtube-nocookie.com blob:; img-src 'self' blob: data: https://*; media-src 'self' blob:; connect-src 'self' blob: data: https://unpkg.com;
   Strict-Transport-Security: max-age=31536000
+  Cross-Origin-Opener-Policy "same-origin-allow-popups"
