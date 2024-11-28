@@ -44,11 +44,12 @@ enableRobotsTXT = true
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.136.0'
+    min = '0.138.0'
 
 [permalinks]
   posts = '/posts/:slug/'
   notes = '/notes/:filename/'
+  pages = '/:filename'
 
 [privacy]
   [privacy.youtube]
@@ -91,7 +92,7 @@ enableRobotsTXT = true
 
     [[menus.main]]
     name = 'About'
-    pageRef = '/about'
+    pageRef = '/pages/about'
     weight = 2
 
     [[menus.main]]
@@ -101,7 +102,7 @@ enableRobotsTXT = true
 
     [[menus.main]]
     name = 'More'
-    pageRef = '/more'
+    pageRef = '/pages/more'
     weight = 4
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
