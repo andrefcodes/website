@@ -19,7 +19,7 @@ I set a goal of making at least four posts per month (not counting the monthly "
 Below are the posts from the previous month:
 
 * [Introducing some privacy to your digital life]({{< relref "/posts/2022/introducing-some-privacy-to-your-digital-life.md" >}})
-* [Things I use]({{< relref "/uses/index.md" >}})
+* [Things I use]({{< relref "/pages/uses/index.md" >}})
 * [What is Wrong with the Linux Community]({{< relref "/posts/2022/what-is-wrong-with-the-linux-community.md" >}})
 * [Disconnecting is becoming increasingly difficult]({{< relref "/posts/2022/disconnecting-is-becoming-increasingly-difficult.md" >}})
 

@@ -13,7 +13,3 @@ I want to be able to contribute, not only financially, to FOSS projects that I l
 I don't post often. Like most of you readers, I am a very busy person with my family and work. However, quality over quantity, so I hope you understand.
 
 Last but not least, this site provides both an [RSS](/feed.xml) feed, so you can catch up on what I'm posting using your newsreader client of choice.
-
-{{< postsList >}}
-
-{{< contact >}}
