@@ -18,7 +18,7 @@ Here I go again, messing around with my blog... I took a deep breath, then liste
 
 Among all the options in my brief research, I liked {{< url "Ghost CMS" "https://ghost.org/">}} the most. Problem is, their managed hosting is more than I’d like to pay, so I self-hosted it. As of this writing, their starter plan is $9/mo billed yearly (or $11 billed monthly).
 
-{{< img "Ghost CMS screenshot" "E1A56524-B127-436C-87D7-5F5395C325F2-1995104443.webp" >}}
+{{< img "Ghost CMS screenshot" "/uploads/images/E1A56524-B127-436C-87D7-5F5395C325F2-1995104443.webp" >}}
 *Image from {{< url "Ghost Website" "https://ghost.org/images/home/posts.png">}} / Ghost CMS Screenshot*
 
 **Pros:**
