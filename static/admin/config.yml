@@ -33,35 +33,35 @@ collections:
     label: "Indexes"
     icon: "house"
     files:
-     - file: "content/_index.md"
-       label: "Homepage"
-       name: "home"
-       fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Draft, name: draft, widget: boolean}
-        - {label: "Content", name: "body", widget: "markdown"}
-     - file: "content/posts/_index.md"
-       label: "Posts"
-       name: "posts list"
-       fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Description", name: "description", widget: "text"}
-        - {label: "Date", name: "date", widget: "datetime"}
-        - {label: Draft, name: draft, widget: boolean}
-        - {label: "Content", name: "body", widget: "markdown"}
-     - file: "content/notes/_index.md"
-       label: "Notes"
-       name: "notes list"
-       fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Description", name: "description", widget: "text"}
-        - {label: "Date", name: "date", widget: "datetime"}
-        - {label: Draft, name: draft, widget: boolean}
-        - {label: "Content", name: "body", widget: "markdown"}
+      - file: "content/_index.md"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Draft", name: "draft", widget: "boolean"}
+          - {label: "Content", name: "body", widget: "markdown"}
+      - file: "content/posts/_index.md"
+        label: "Posts"
+        name: "posts"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Date", name: "date", widget: "datetime"}
+          - {label: "Draft", name: "draft", widget: "boolean"}
+          - {label: "Content", name: "body", widget: "markdown"}
+      - file: "content/notes/_index.md"
+        label: "Notes"
+        name: "notes"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Date", name: "date", widget: "datetime"}
+          - {label: "Draft", name: "draft", widget: "boolean"}
+          - {label: "Content", name: "body", widget: "markdown"}
 
     #  - file: "content/pages/_index.md"
     #    label: "Pages"
-    #    name: "pages list"
+    #    name: "pages"
     #    fields:
     #      - {label: Title, name: title, widget: string}
     #      - {label: Draft, name: draft, widget: boolean}
