@@ -3,6 +3,7 @@ languageCode = 'en-US'
 title = 'Andre Franca'
 
 enableRobotsTXT = true
+timeZone = 'America/Sao_Paulo'
 
 [pagination]
   pagerSize = 5
