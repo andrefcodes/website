@@ -29,16 +29,38 @@ editor:
 
 collections:
 
-#  - name: "pages list"
-#    label: "Pages _index"
-#    files:
-#      - file: "content/pages/_index.md"
-#        label: "_index"
-#        name: "pages list"
-#        fields:
-#          - {label: Title, name: title, widget: string}
-#          - {label: Draft, name: draft, widget: boolean}
-#          - {label: "Content", name: "body", widget: "markdown"}
+  - name: "Indexes"
+    label: "Indexes"
+    icon: "house"
+    files:
+     - file: "content/_index.md"
+       label: "Homepage"
+       name: "home"
+       fields:
+         - {label: Title, name: title, widget: string}
+         - {label: Draft, name: draft, widget: boolean}
+         - {label: "Content", name: "body", widget: "markdown"}
+     - file: "content/posts/_index.md"
+       label: "Posts"
+       name: "posts list"
+       fields:
+         - {label: Title, name: title, widget: string}
+         - {label: Draft, name: draft, widget: boolean}
+         - {label: "Content", name: "body", widget: "markdown"}
+     - file: "content/notes/_index.md"
+       label: "Notes"
+       name: "notes list"
+       fields:
+         - {label: Title, name: title, widget: string}
+         - {label: Draft, name: draft, widget: boolean}
+         - {label: "Content", name: "body", widget: "markdown"}
+    #  - file: "content/pages/_index.md"
+    #    label: "Pages"
+    #    name: "pages list"
+    #    fields:
+    #      - {label: Title, name: title, widget: string}
+    #      - {label: Draft, name: draft, widget: boolean}
+    #      - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "pages"
     label: "Pages"
@@ -53,28 +75,6 @@ collections:
       - {label: "Draft", name: draft, widget: boolean, default: true}
       - {label: "Content", name: "body", widget: "markdown"}
 
-#  - name: "home"
-#    label: "Homepage"
-#    files:
-#      - file: "content/_index.md"
-#        label: "_index.md"
-#        name: "home"
-#        fields:
-#          - {label: Title, name: title, widget: string}
-#          - {label: Draft, name: draft, widget: boolean}
-#          - {label: "Content", name: "body", widget: "markdown"}
-
-#  - name: "posts list"
-#    label: "Posts _index"
-#    files:
-#      - file: "content/posts/_index.md"
-#        label: "_index.md"
-#        name: "posts list"
-#        fields:
-#          - {label: Title, name: title, widget: string}
-#          - {label: Draft, name: draft, widget: boolean}
-#          - {label: "Content", name: "body", widget: "markdown"}
-
   - name: "post"
     label: "Posts"
     folder: "content/posts"
@@ -88,17 +88,6 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Draft", name: draft, widget: boolean, default: true}
       - {label: "Content", name: "body", widget: "markdown"}
-
-#  - name: "notes list"
-#    label: "Notes _index"
-#    files:
-#      - file: "content/notes/_index.md"
-#        label: "_index.md"
-#        name: "notes list"
-#        fields:
-#          - {label: Title, name: title, widget: string}
-#          - {label: Draft, name: draft, widget: boolean}
-#          - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "note"
     label: "Notes"
@@ -135,4 +124,3 @@ collections:
                 label: RSS Feed
               - name: description
                 label: Description
-
