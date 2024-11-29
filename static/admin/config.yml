@@ -29,6 +29,30 @@ editor:
 
 collections:
 
+#  - name: "pages list"
+#    label: "Pages _index"
+#    files:
+#      - file: "content/pages/_index.md"
+#        label: "_index"
+#        name: "pages list"
+#        fields:
+#          - {label: Title, name: title, widget: string}
+#          - {label: Draft, name: draft, widget: boolean}
+#          - {label: "Content", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    path: "{{slug}}/index"
+    icon: "pages"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: draft, widget: boolean, default: true}
+      - {label: "Content", name: "body", widget: "markdown"}
+
 #  - name: "home"
 #    label: "Homepage"
 #    files:
@@ -55,6 +79,7 @@ collections:
     label: "Posts"
     folder: "content/posts"
     path: "{{year}}/{{slug}}/index"
+    icon: "post_add"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -79,6 +104,7 @@ collections:
     label: "Notes"
     folder: "content/notes"
     path: "{{year}}/{{year}}{{month}}{{day}}-{{hour}}{{minute}}/index"
+    icon: "edit_note"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", default: "dd Month YYYY at hh:mm"}
@@ -87,25 +113,26 @@ collections:
       - {label: "Draft", name: draft, widget: boolean, default: false}
       - {label: "Content", name: "body", widget: "markdown"}
 
-#  - name: "pages list"
-#    label: "Pages _index"
-#    files:
-#      - file: "content/pages/_index.md"
-#        label: "_index"
-#        name: "pages list"
-#        fields:
-#          - {label: Title, name: title, widget: string}
-#          - {label: Draft, name: draft, widget: boolean}
-#          - {label: "Content", name: "body", widget: "markdown"}
+  - name: "blogroll"
+    label: "Blogroll List"
+    icon: "rss_feed"
+    files:
+      - name: "blogroll"
+        label: "blogroll.json"
+        file: "data/blogroll.json"
+        fields:
+          - name: members
+            label: Members
+            label_singular: Member
+            widget: list
+            root: true
+            fields:
+              - name: name
+                label: Name
+              - name: link
+                label: Website
+              - name: rss
+                label: RSS Feed
+              - name: description
+                label: Description
 
-  - name: "pages"
-    label: "Pages"
-    folder: "content/pages"
-    path: "{{slug}}/index"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Draft", name: draft, widget: boolean, default: true}
-      - {label: "Content", name: "body", widget: "markdown"}
