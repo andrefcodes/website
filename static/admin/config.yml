@@ -29,8 +29,8 @@ editor:
 
 collections:
 
-  - name: "Indexes"
-    label: "Indexes"
+  - name: "home"
+    label: "Homepage"
     icon: "house"
     files:
       - file: "content/_index.md"
@@ -40,6 +40,10 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Draft", name: "draft", widget: "boolean"}
           - {label: "Content", name: "body", widget: "markdown"}
+  - name: "posts-list"
+    label: "Posts Index"
+    icon: "wysiwyg"
+    files:
       - file: "content/posts/_index.md"
         label: "Posts"
         name: "posts"
@@ -49,6 +53,10 @@ collections:
           - {label: "Date", name: "date", widget: "datetime"}
           - {label: "Draft", name: "draft", widget: "boolean"}
           - {label: "Content", name: "body", widget: "markdown"}
+  - name: "notes-list"
+    label: "Notes Index"
+    icon: "wysiwyg"
+    files:
       - file: "content/notes/_index.md"
         label: "Notes"
         name: "notes"
@@ -68,7 +76,7 @@ collections:
     #      - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "pages"
-    label: "Pages"
+    label: "Single Pages"
     folder: "content/pages"
     path: "{{slug}}/index"
     icon: "pages"
@@ -81,7 +89,7 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "post"
-    label: "Posts"
+    label: "All Posts"
     folder: "content/posts"
     path: "{{year}}/{{slug}}/index"
     icon: "post_add"
@@ -95,7 +103,7 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "note"
-    label: "Notes"
+    label: "All Notes"
     folder: "content/notes"
     path: "{{year}}/{{year}}{{month}}{{day}}-{{hour}}{{minute}}/index"
     icon: "edit_note"
