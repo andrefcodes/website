@@ -1,5 +1,5 @@
 ---
-title: Random Thoughts of a Saturday Night
+title: Random Thoughts on a Saturday Night
 description: Sharing some quick thoughts on Formula 1 driver Lando Norris, Nextflix's new show about Senna, and the Libertadores Cup final.
 date: 2024-11-30T21:52:00
 tags:
