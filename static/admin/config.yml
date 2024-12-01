@@ -4,9 +4,9 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.abf-li.workers.dev
   commit_messages:
-    create: "Add new content: {{slug}}" 
-    update: "Update content: {{slug}}"
-    delete: "Delete content: {{slug}}" 
+    create: "Add new content" 
+    update: "Update content"
+    delete: "Delete content" 
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
 
