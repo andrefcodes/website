@@ -14,7 +14,7 @@ timeZone = 'America/Sao_Paulo'
     email = 'hello@privatemail.slmail.me'
     gitProfile = 'https://github.com/a-franca'
     mastodonUrl = 'https://mas.to/@abf'
-    mastodonHandle = 'abf@mas.to'
+    mastodonHandle = '@abf@mas.to'
     [params.user.avatar]
       picture = 'images/avatar/author.png'
       pictureWidth = '230'
