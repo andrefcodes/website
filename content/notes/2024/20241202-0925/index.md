@@ -1,5 +1,5 @@
 ---
-title: 12 December 2024 at 09:16
+title: 02 December 2024 at 09:16
 date: 2024-12-02T09:16:00
 tags:
   - notes
