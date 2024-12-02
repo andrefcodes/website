@@ -5,7 +5,7 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.User.name }}">
-<link rel="license" href="{{ "/#license" | absURL }}">
+<link rel="license" href="{{ "/licenses" | absURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
 <!-- Mastodon author -->

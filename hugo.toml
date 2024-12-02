@@ -28,9 +28,9 @@ timeZone = 'America/Sao_Paulo'
     sourceCode = 'https://github.com/a-franca/website'
     wordsPerMinute = 200
     codeLicense = 'MIT'
-    codeLicenseUrl = 'https://github.com/a-franca/website/raw/main/LICENSE'
+    codeLicenseUrl = '/licenses/#code-license'
     contentLicense = 'CC BY-NC-SA 4.0'
-    contentLicenseUrl = 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+    contentLicenseUrl = '/licenses/#content-license'
     [params.general.seo]
       favicon = '/images/favicons/favicon-32x32.png'
       logo = '/images/feature/brutal-logo.png'
