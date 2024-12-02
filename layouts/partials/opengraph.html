@@ -1,32 +1,29 @@
-<!-- Open Graph Meta Tags -->
+<!-- Open Graph integration -->
 <meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if (in .Permalink "/notes/") }}{{ "My microblog-like posts" }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
 <meta property="og:image" content="{{ .Site.Params.General.Seo.featureImage | absURL }}">
-<meta property="og:image:height" content="{{ .Site.Params.General.Seo.featureHeight }}">
-<meta property="og:image:width" content="{{ .Site.Params.General.Seo.featureWidth }}">
-<meta property="og:image:alt" content="{{ .Site.Params.General.Seo.featureAlt }}">
 <meta property="og:locale" content="{{ .Site.LanguageCode }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:type" content="{{ if in .Permalink "/posts/" }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if or (in .Permalink "/posts/") (in .Permalink "/notes/") }}article{{ else }}website{{ end }}">
 <meta property="article:published_time" content="{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}">
-<meta name="twitter:card" content="summary_large_image">
+
+<!-- Twitter integration -->
+
+<meta name="twitter:card" content="{{ if (in .Permalink "/notes/") }}{{ "summary" }}{{ else }}{{ "summary_large_image"}}{{ end }}">
 <meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if (in .Permalink "/notes/") }}{{ "My microblog-like posts" }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
 <meta property="twitter:image" content="{{ .Site.Params.General.Seo.featureImage | absURL }}">
-<meta property="twitter:image:height" content="{{ .Site.Params.General.Seo.featureHeight }}">
-<meta property="twitter:image:width" content="{{ .Site.Params.General.Seo.featureWidth }}">
-<meta property="twitter:image:alt" content="{{ .Site.Params.General.Seo.featureAlt }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
 
 <!-- JSON Linked Data -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "{{ if in .Permalink "/posts/" }}Article{{ else }}Website{{ end }}",
+    "@type": "{{ if or (in .Permalink "/posts/") (in .Permalink "/notes/") }}article{{ else }}website{{ end }}",
     "name": "{{ .Title }}",
     "headline": "{{ .Title }}",
-    "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}",
+    "description": "{{ if .Description }}{{ .Description }}{{ else if (in .Permalink "/notes/") }}{{ "My microblog-like posts" }}{{ else }}{{ .Site.Params.General.description }}{{ end }}",
     "url": "{{ .Permalink | jsonify}}",
     "datePublished": "{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}",
     "image": {
