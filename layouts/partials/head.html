@@ -8,17 +8,21 @@
 <link rel="license" href="{{ "/#license" | absURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
+<!-- Mastodon author -->
+<meta name="fediverse:creator" content="{{ .Site.Params.User.mastodonHandle }}" />
+
 {{ partial "favicon.html" . }}
 
 <!-- Include CSS file -->
 <link rel="preload" href="{{ "css/style.css" | relURL }}" as="style" />
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 
-{{ partial "seo.html" . }}
+{{ partial "opengraph.html" . }}
 
 <!-- Feeds -->
 <link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed | absURL }}" title="{{ .Site.Title }}'s RSS Feed">
 <link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.notesFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
+<link rel="blogroll" type="text/xml" href="/blogroll.opml">
 
 <!-- Sitemap -->
 <link rel="sitemap" type="application/xml" href="{{ .Site.Params.General.sitemap | absURL }}" title="Sitemap">
