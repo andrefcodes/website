@@ -5,6 +5,7 @@
 <meta property="og:locale" content="{{ .Site.LanguageCode }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:logo" content="{{ .Site.Params.General.Seo.logo | absURL }}" />
 <meta property="og:type" content="{{ if or (in .Permalink "/posts/") (in .Permalink "/notes/") }}article{{ else }}website{{ end }}">
 <meta property="article:published_time" content="{{ if .Date }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}">
 
