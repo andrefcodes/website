@@ -3,29 +3,38 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.General.description }}{{ end }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.General.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.User.name }}">
 <link rel="license" href="{{ "/licenses" | absURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
-<!-- Mastodon author -->
+{{"<!-- Mastodon author -->" | safeHTML}}
 <meta name="fediverse:creator" content="{{ .Site.Params.User.mastodonHandle }}" />
 
 {{ partial "favicon.html" . }}
 
-<!-- Include CSS file -->
-<link rel="preload" href="{{ "css/style.css" | relURL }}" as="style" />
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-
 {{ partial "opengraph.html" . }}
 
-<!-- Feeds -->
-<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed | absURL }}" title="{{ .Site.Title }}'s RSS Feed">
-<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.notesFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
+{{"<!-- RSS Feeds -->" | safeHTML}}
+<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed | absURL }}" title="{{ .Site.Title }}'s Posts Feed">
+<link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.notesRssFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
+
+{{"<!-- JSON Feed -->" | safeHTML}}
+<link rel="alternate" type="application/feed+json" href="{{ .Site.Params.General.jsonFeed | absURL }}" title="{{ .Site.Title }}'s Posts Feed">
+<link rel="alternate" type="application/feed+json" href="{{ .Site.Params.General.notesJsonFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
+
+{{"<!-- Atom Feed -->" | safeHTML}}
+<link rel="alternate" type="application/atom+xml" href="{{ .Site.Params.General.atomFeed | absURL }}" title="{{ .Site.Title }}'s Posts Feed">
+<link rel="alternate" type="application/atom+xml" href="{{ .Site.Params.General.notesAtomFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
+
+{{"<!-- Blogroll -->" | safeHTML }}
 <link rel="blogroll" type="text/xml" href="/blogroll.opml">
 
-<!-- Sitemap -->
+{{"<!-- Sitemap -->" | safeHTML}}
 <link rel="sitemap" type="application/xml" href="{{ .Site.Params.General.sitemap | absURL }}" title="Sitemap">
 
-<!-- Darktheme -->
+{{"<!-- Style -->" | safeHTML}}
+{{ partial "style.html" . }}
+
+{{"<!-- Darktheme -->" | safeHTML}}
 <meta name="color-scheme" content="dark light">
