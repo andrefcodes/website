@@ -16,7 +16,12 @@ Thumbs.db
 *.orig
 *.rej
 
+#Wrangler
+.Wrangler
+node_modules
+
 # Custom files
 Makefile
 publish.sh
 drafts/
+.env
