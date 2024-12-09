@@ -1,5 +1,6 @@
 +++
 title = 'Home'
+description = 'The personal blog of Andre Franca'
 draft = false
 +++
 
