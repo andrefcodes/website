@@ -17,13 +17,17 @@ timeZone = 'America/Sao_Paulo'
     mastodonHandle = '@abf@mas.to'
     [params.user.avatar]
       picture = 'images/avatar/author.png'
-      pictureWidth = '230'
-      pictureHeight = '230'
+      pictureWidth = '994'
+      pictureHeight = '994'
   [params.general]
     description = 'The personal blog of Andre Franca'
     tagline = 'A technology enthusiast'
     rssFeed = '/feed.xml'
-    notesFeed = '/notes.xml'
+    notesRssFeed = '/notes.xml'
+    atomFeed = '/posts.atom'
+    notesAtomFeed = '/notes.atom'
+    jsonFeed = '/posts.json'
+    notesJsonFeed = '/notes.json'
     sitemap = '/sitemap.xml'
     sourceCode = 'https://github.com/a-franca/website'
     wordsPerMinute = 200
@@ -38,14 +42,14 @@ timeZone = 'America/Sao_Paulo'
       logoHeight = '512'
       logoAlt = 'Brutal Website Logo'
       featureImage = '/images/feature/brutal-feature-image.png'
-      featureWidth = '1369'
-      featureHeight = '720'
+      featureWidth = '1200'
+      featureHeight = '630'
       featureAlt = 'Brutal Feature Image'
 
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.138.0'
+    min = '0.139.3'
 
 [permalinks]
   posts = '/posts/:slug/'
@@ -58,7 +62,7 @@ timeZone = 'America/Sao_Paulo'
     privacyEnhanced = true
 
 [outputs]
-  home = ['html', 'rss', 'rssnotes', 'blogroll']
+  home = ['html', 'rss', 'rssnotes', 'atomfeed', 'atomfeednotes', 'jsonfeed', 'jsonfeednotes', 'blogroll']
   section = ['html']
   taxonomy = ['html']
   term = ['html']
@@ -71,6 +75,22 @@ timeZone = 'America/Sao_Paulo'
     name = "RSSNotes"
     mediaType = "application/rss+xml"
     baseName = "notes"
+  [outputFormats.atomfeed]
+    name = "atomfeed"
+    mediaType = "application/atom+xml"
+    baseName = "posts"
+  [outputFormats.atomfeednotes]
+    name = "atomfeednotes"
+    mediaType = "application/atom+xml"
+    baseName = "notes"
+  [outputFormats.jsonfeed]
+    name = "jsonfeed"
+    mediaType = "application/feed+json"
+    baseName = "posts"
+  [outputFormats.jsonfeednotes]
+    name = "jsonfeednotes"
+    mediaType = "application/feed+json"
+    baseName = "notes"
   [outputFormats.sitemap]
     mediatype = "application/xml"
     basename = "sitemap"
@@ -81,6 +101,10 @@ timeZone = 'America/Sao_Paulo'
 [mediaTypes]
   [mediaTypes."application/xml"]
     suffixes = ["opml"]
+  [mediaTypes."application/feed+json"]
+    suffixes = ["json"]
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["atom"]
 
 [taxonomies]
   tag = "tags"
