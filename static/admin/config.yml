@@ -29,59 +29,59 @@ editor:
 
 collections:
 
-  - name: "home"
-    label: "Homepage"
-    icon: "house"
-    files:
-      - file: "content/_index.md"
-        label: "_index.md"
-        name: "home"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Draft", name: "draft", widget: "boolean"}
-          - {label: "Content", name: "body", widget: "markdown"}
+  # - name: "home"
+  #   label: "Homepage"
+  #   icon: "house"
+  #   files:
+  #     - file: "content/_index.md"
+  #       label: "_index.md"
+  #       name: "home"
+  #       fields:
+  #         - {label: "Title", name: "title", widget: "string"}
+  #         - {label: "Description", name: "description", widget: "text"}
+  #         - {label: "Draft", name: "draft", widget: "boolean"}
+  #         - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "posts-page"
-    label: "Posts Home"
-    icon: "wysiwyg"
-    files:
-      - file: "content/posts/_index.md"
-        label: "_index.md"
-        name: "posts"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Date", name: "date", widget: "datetime"}
-          - {label: "Draft", name: "draft", widget: "boolean"}
-          - {label: "Content", name: "body", widget: "markdown"}
+  # - name: "posts-page"
+  #   label: "Posts Home"
+  #   icon: "wysiwyg"
+  #   files:
+  #     - file: "content/posts/_index.md"
+  #       label: "_index.md"
+  #       name: "posts"
+  #       fields:
+  #         - {label: "Title", name: "title", widget: "string"}
+  #         - {label: "Description", name: "description", widget: "text"}
+  #         - {label: "Date", name: "date", widget: "datetime"}
+  #         - {label: "Draft", name: "draft", widget: "boolean"}
+  #         - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "notes-page"
-    label: "Notes Home"
-    icon: "wysiwyg"
-    files:
-      - file: "content/notes/_index.md"
-        label: "_index.md"
-        name: "notes"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Date", name: "date", widget: "datetime"}
-          - {label: "Draft", name: "draft", widget: "boolean"}
-          - {label: "Content", name: "body", widget: "markdown"}
+  # - name: "notes-page"
+  #   label: "Notes Home"
+  #   icon: "wysiwyg"
+  #   files:
+  #     - file: "content/notes/_index.md"
+  #       label: "_index.md"
+  #       name: "notes"
+  #       fields:
+  #         - {label: "Title", name: "title", widget: "string"}
+  #         - {label: "Description", name: "description", widget: "text"}
+  #         - {label: "Date", name: "date", widget: "datetime"}
+  #         - {label: "Draft", name: "draft", widget: "boolean"}
+  #         - {label: "Content", name: "body", widget: "markdown"}
 
-  - name: "page"
-    label: "Single Pages"
-    folder: "content/pages"
-    path: "{{slug}}/index"
-    icon: "pages"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Draft", name: draft, widget: boolean, default: true}
-      - {label: "Content", name: "body", widget: "markdown"}
+  # - name: "page"
+  #   label: "Single Pages"
+  #   folder: "content/pages"
+  #   path: "{{slug}}/index"
+  #   icon: "pages"
+  #   create: true
+  #   fields:
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Description", name: "description", widget: "text"}
+  #     - {label: "Date", name: "date", widget: "datetime"}
+  #     - {label: "Draft", name: draft, widget: boolean, default: true}
+  #     - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "post"
     label: "All Posts"
