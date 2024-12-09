@@ -30,9 +30,8 @@
 {{- if ge $limit 1 }}
 {{- $pages = $pages | first $limit }}
 {{- end }}
-{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n" | safeHTML }}
-{{/* {{- printf "<?xml-stylesheet href=\"/notes.xsl\" type=\"text/xsl\"?>" | safeHTML }} */}}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" {{/* xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"*/}}>
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" | safeHTML -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
@@ -46,16 +45,16 @@
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with $authorName }}
     <copyright>{{- printf "©" | safeHTML }} {{ now.Year }} {{ . }}</copyright>{{ end }}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}{{- with .OutputFormats.Get "rssnotes" }}
+    <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "2006-01-02T15:04:05-03:00" | safeHTML }}</lastBuildDate>{{ end }}{{- with .OutputFormats.Get "rssnotes" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}{{/*{{- range $pages }}*/}}{{ range (where .Site.RegularPages "Section" "notes") }}
     <item>
       <title>{{ .Title }}</title>
       <author>{{ with $authorName}}{{ . }}{{ end }}</author>
       <link>{{ .Permalink }}</link>
-      <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>{{- with $authorName }}
+      <pubDate>{{ .PublishDate.Format "2006-01-02T15:04:05-03:00" | safeHTML }}</pubDate>{{- with $authorName }}
       <author>{{ . }} {{ with $authorEmail }}({{ . }}){{ end }}</author>{{ end }}
-      <guid>{{ .Permalink }}</guid>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>{{ with .Params.tags }}{{ range . }}
       <category>{{ . }}</category>{{ end }}{{ end }}
     </item>
