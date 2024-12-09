@@ -102,10 +102,10 @@ This code was based on {{< url "Pretty Feed v3" "https://github.com/genmon/about
 
 This is the before and after:
 
-{{< img "Website Screenshot" "/uploads/images/dd9cbdae-5073-49f8-8a77-ab9050367b06.webp" >}}
+{{< img "Website Screenshot" "dd9cbdae-5073-49f8-8a77-ab9050367b06.webp" >}}
 *Before*
 
-{{< img "New Website Screenshot" "/uploads/images/2f11be8e-98ce-4d35-9b15-17a9287e9a57.webp" >}}
+{{< img "New Website Screenshot" "2f11be8e-98ce-4d35-9b15-17a9287e9a57.webp" >}}
 *After*
 
 These are nice people who have also styled their feed:

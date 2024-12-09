@@ -43,7 +43,7 @@ That's why this tip comes in hand.
 
 ### When you're done, your shortcut settings should look like this:
 
-{{< img "Shortcut settings" "/uploads/images/FDFF0A0A-EEF5-408C-A766-80B2547B7A57.webp" >}}
+{{< img "Shortcut settings" "FDFF0A0A-EEF5-408C-A766-80B2547B7A57.webp" >}}
 
 ## Using the Shortcut
 
@@ -53,7 +53,7 @@ That's why this tip comes in hand.
 
 * Now, just share the new created file.
 
-{{< img "Sharing an image removing metadata" "/uploads/images/F5FEFED3-595F-47A5-A222-6698067B29EE.webp">}}
+{{< img "Sharing an image removing metadata" "F5FEFED3-595F-47A5-A222-6698067B29EE.webp">}}
 
 This is a quick method you can use to share your photos with a little more privacy from your phone.
 
