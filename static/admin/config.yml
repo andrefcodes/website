@@ -13,7 +13,7 @@ backend:
 show_preview_links: false
 
 site_url: https://abf.li
-logo_url: https://abf.li/images/feature/brutal-logo.webp
+logo_url: https://abf.li/images/feature/brutal-logo.png
 
 publish_mode: editorial_workflow
 media_folder: static/uploads/images
