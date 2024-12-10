@@ -68,7 +68,7 @@
         "@type": "Person",
         "name": "{{ .Site.Params.User.name }}",
         "url": "{{ .Site.BaseURL }}",
-        "sameAs": [{{ .Site.Params.User.mastodonUrl }}, {{ .Site.Params.User.gitProfile }}],
+        "sameAs": [{{ .Site.Params.User.mastodonUrl }}, {{ .Site.Params.User.blueskyUrl }}, {{ .Site.Params.User.gitProfile }}],
         "image": {
             "@type": "ImageObject",
             "url": "{{ .Site.Params.User.Avatar.picture | absURL }}",

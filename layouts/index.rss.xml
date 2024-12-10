@@ -55,7 +55,7 @@
       <pubDate>{{ .PublishDate.Format "2006-01-02T15:04:05-03:00" | safeHTML }}</pubDate>{{- with $authorName }}
       <author>{{ . }} {{ with $authorEmail }}({{ . }}){{ end }}</author>{{ end }}
       <guid isPermaLink="true">{{ .Permalink }}</guid>
-      {{- $contact := printf "<p>~ Thanks for reading this post via RSS!<br>Let me know your thoughts by leaving a message via <a href=\"mailto:%q ?subject=Re: %q\">Email</a> or <a href=\" %q\">Mastodon</a>.</p>" .Site.Params.User.email .Title .Site.Params.User.mastodonURL | transform.XMLEscape | safeHTML }}
+      {{- $contact := printf "<p>~ Thanks for reading this post via RSS!<br>Let me know your thoughts by leaving a message via <a href=\"mailto:%q ?subject=Re: %q\">Email</a>, <a href=\" %q\">Mastodon</a>, or <a href=\" %q\">Bluesky</a>.</p>" .Site.Params.User.email .Title .Site.Params.User.mastodonURL .Site.Params.User.blueskyURL | transform.XMLEscape | safeHTML }}
       <description>{{ .Content | transform.XMLEscape | safeHTML }}{{ with $contact }}{{ . }}{{ end }}</description>{{ with .Params.tags }}{{ range . }}
       <category>{{ . }}</category>{{ end }}{{ end }}
     </item>
