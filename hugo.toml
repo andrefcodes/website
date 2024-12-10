@@ -15,6 +15,8 @@ timeZone = 'America/Sao_Paulo'
     gitProfile = 'https://github.com/a-franca'
     mastodonUrl = 'https://mas.to/@abf'
     mastodonHandle = '@abf@mas.to'
+    blueskyUrl = 'https://bsky.app/profile/abf.li'
+    blueskyHandle = '@abf.li'
     [params.user.avatar]
       picture = 'images/avatar/author.png'
       pictureWidth = '994'
