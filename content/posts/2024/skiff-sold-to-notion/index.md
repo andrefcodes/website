@@ -24,7 +24,7 @@ I had migrated to Skiff a few months ago when I began the transition from the Ap
 Before I host my email with Apple, I used Zoho Mail as my provider. The company doesn't call itself privacy-focused, but it offers an incredible service with reasonable prices and its {{< url "privacy policy" "https://www.zoho.com/mail/privacy.html" >}} is very straightforward. 
 
 {{< img "Zoho Mail Privacy Policy" "bdb706de-b958-4f98-8e88-4433ac371d94.webp" >}}
-
+<br>
 {{< img "Zoho Mail Privacy Policy" "2d350588-7038-42c0-8920-af94b6f2de1a.webp" >}}
 
 {{< img "Zoho Mail Privacy Policy" "8dc0841e-0608-4ebd-9018-5434c130e318.webp" >}}
