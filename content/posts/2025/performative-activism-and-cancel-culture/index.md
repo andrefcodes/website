@@ -4,6 +4,7 @@ description: The text criticizes performative activism and cancel culture, highl
 date: 2025-03-21T16:20:00
 tags:
   - Blogging
+  - Politics
 draft: false
 ---
 In recent years, performative activism and cancel culture have become dominant forces in social and political discourse, particularly in countries like Brazil. While these movements claim to advocate for justice and diversity, they often lead to serious consequences that undermine free speech, democracy, and even legal certainty.
