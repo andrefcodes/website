@@ -10,7 +10,7 @@ draft = false
 ```markdown
 MIT License
 
-Copyright (c) 2024 Andre Franca
+Copyright (c) {{< currentYear >}} Andre Franca
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
