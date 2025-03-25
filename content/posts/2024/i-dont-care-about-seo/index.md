@@ -2,7 +2,7 @@
 title = "I Don't Care About Seo"
 description = "I don't care about SEO and that's why quit it"
 date = 2024-01-29T16:58:22-03:00
-tags = ['Openweb']
+tags = ['OpenWeb']
 draft = false
 +++
 
