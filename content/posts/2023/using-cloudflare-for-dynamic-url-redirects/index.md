@@ -2,7 +2,7 @@
 title = 'Using Cloudflare for Dynamic Url Redirects'
 description = 'This is a guide to set up dynamic URL redirects for free using Cloudflare Pages'
 date = 2023-01-31T16:58:21-03:00
-tags = ['Technology', 'Web Hosting']
+tags = ['Technology', 'Hosting Provider']
 draft = false
 +++
 
