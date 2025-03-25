@@ -2,7 +2,7 @@
 title = 'Is There a Perfect Keyboard'
 description = 'Maybe the keyboard you were looking for is not the best keyboad. Actually, is there a perfect keyboard?'
 date = 2022-05-26T16:20:47-03:00
-tags = ['Technology', 'Devices', 'Mechanical Keyboard']
+tags = ['Technology', 'Mechanical Keyboard']
 draft = false
 +++
 

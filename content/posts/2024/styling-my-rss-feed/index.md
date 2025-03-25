@@ -2,7 +2,7 @@
 title = 'Styling My Rss Feed'
 description = 'Describing how I styled my RSS Feed page'
 date = 2024-01-14T16:58:22-03:00
-tags = ['OpenWeb', 'Development']
+tags = ['OpenWeb']
 draft = false
 +++
 

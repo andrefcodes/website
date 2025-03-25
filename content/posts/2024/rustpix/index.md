@@ -2,7 +2,7 @@
 title = "Rustpix"
 description = "A lightweight tool to optimize images for the web"
 date = 2024-11-18T12:24:38-03:00
-tags = ['Blogging', 'Static Site', 'Development', 'Metadata', 'Open Source']
+tags = ['Blogging', 'Static Site', 'Coding', 'Metadata', 'Open Source']
 draft = false
 +++
 

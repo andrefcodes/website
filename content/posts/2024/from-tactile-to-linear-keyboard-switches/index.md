@@ -2,7 +2,7 @@
 title = 'From Tactile to Linear Keyboard Switches'
 description = 'This post I write about why I replaced my keyboard switches from tactile to linear'
 date = 2024-02-11T16:58:22-03:00
-tags = ['Mechanical Keyboard', 'Devices', 'Technology']
+tags = ['Mechanical Keyboard', 'Technology']
 draft = false
 +++
 
