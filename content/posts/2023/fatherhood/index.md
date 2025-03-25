@@ -2,7 +2,7 @@
 title = 'Embracing Fatherhood'
 description = 'A few thoughts on the importance of a genuine father-child connection'
 date = 2023-11-09T16:58:21-03:00
-tags = ['Blogging']
+tags = ['Blogging', 'Parenting']
 draft = false
 +++
 

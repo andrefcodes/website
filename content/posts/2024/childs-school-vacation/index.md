@@ -2,7 +2,7 @@
 title = "Child's School Vacation"
 description = "Preparing for my child's school vacation"
 date = 2024-12-11T13:59:32-03:00
-tags = ['Blogging']
+tags = ['Blogging', 'Parenting']
 draft = false
 +++
 
