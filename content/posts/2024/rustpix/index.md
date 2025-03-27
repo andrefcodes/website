@@ -6,7 +6,7 @@ tags = ['Blogging', 'Static Site', 'Coding', 'Metadata', 'Open Source']
 draft = false
 +++
 
-I've just published a new open-source software on GitHub called [Rustpix](https://github.com/a-franca/rustpix). As the name suggests, it's a simple program written entirely in Rust.
+I've just published a new open-source software on GitHub called [Rustpix](https://github.com/andrefcodes/rustpix). As the name suggests, it's a simple program written entirely in Rust.
 
 Essentially, Rustpix is a lightweight tool that automatically optimizes images for web use.
 
