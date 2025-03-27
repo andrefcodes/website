@@ -80,5 +80,5 @@ and the **search.json** file after rendered, like this:
 
 Finally, this is a screenshot of a fully working lightweight searching tool.
 
-{{< img "Website Screenshot" "A6F3D3B5-BF82-46C5-B978-FBF241C1FA99.webp" >}}![](/assets)
+{{< img "Website Screenshot" "A6F3D3B5-BF82-46C5-B978-FBF241C1FA99.webp" >}}
 *Website Screenshot*
