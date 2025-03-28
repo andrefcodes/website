@@ -1,7 +1,7 @@
 +++
 title = 'Things I Use'
 description = 'Collection of hardware and software I currently use'
-date = 2024-10-19T13:49:59-03:00
+date = 2025-03-27T22:15:59-03:00
 draft = false
 +++
 
@@ -21,7 +21,7 @@ Some people on my blogroll have a similar page, and I think it's really useful a
     - Memory: 32GB DDR5 4800MHz
     - Battery: 80Whr (in my tests, around 3 hours)
     - Storage: 1TB PCIe Gen 4
-    - OS: Arch Linux
+    - OS / DE: Arch Linux / Gnome
     - Ports
         - 1x Thunderbolt 4 (USB 4, DisplayPort 1.4)
         - 2x USB Type-C (USB 3.2 Gen 2, DisplayPort 1.4)
@@ -71,11 +71,6 @@ Some people on my blogroll have a similar page, and I think it's really useful a
     - Storage: 64GB
     - OS: iOS (latest)
 
-- iPad Mini 3
-    - Processor: Apple A7
-    - Storage: 128GB
-    - OS: iOS (latest available)
-
 ### Audio
 
 - EarStudio ES100 MK2 Portable DAC/Amp
@@ -120,9 +115,8 @@ Some people on my blogroll have a similar page, and I think it's really useful a
 
 ## Software
 
-- Terminal Emulator: Kitty
-- Mail Service: Zoho Mail
-- Mail Client: Zoho Mail
+- Terminal Emulator: Gnome Console
+- Mail Service / Client: Zoho Mail
 - Notes: Joplin
 - To-Do: Nextcloud Tasks
 - Calendar: Nextcloud Calendar
@@ -136,10 +130,10 @@ Some people on my blogroll have a similar page, and I think it's really useful a
 - Reading: Kindle App
 - Word Processing: Onlyoffice
 - Spreadsheets: Onlyoffice
-- Music: iTunes (Digital Media) / Deezer (Streaming)
-- Podcasts: Pocket Cast
-- Password Management: KeepassXC
-- Social Media: Mastodon
+- Music: Jellyfin
+- Podcasts: AntennaPod
+- Password Management: Bitwarden
+- Social Media: Mastodon / Bluesky
 - Weather: Samsung Weather App
 - Search: DuckDuckGo
 - Code Editor: VSCode
