@@ -2,7 +2,7 @@
 title = 'Formula One Is Back'
 description = 'Sharing my excitement with the new Formula One season'
 date = 2023-03-05T16:58:21-03:00
-tags = ['Blogging']
+tags = ['Blogging', 'Sports']
 draft = false
 +++
 

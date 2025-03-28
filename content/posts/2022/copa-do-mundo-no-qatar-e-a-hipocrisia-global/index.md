@@ -2,7 +2,7 @@
 title = 'Copa Do Mundo No Qatar E a Hipocrisia Global'
 description = 'Meus pensamentos sobre a nossa hipocrisia como sociedade em relação à Copa do Mundo'
 date = 2022-11-22T16:20:48-03:00
-tags = ['Soccer', 'World Cup']
+tags = ['Sports']
 draft = false
 +++
 

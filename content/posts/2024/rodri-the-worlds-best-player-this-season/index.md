@@ -2,7 +2,7 @@
 title = "Rodri, the World's Best Player This Season"
 description = "Manchester City struggles without Rodri, Ballon d’Or winner, highlighting his importance as a key figure in modern football."
 date = 2024-12-01T21:30:42-03:00
-tags = ['blogging', 'soccer']
+tags = ['blogging', 'Sports']
 draft = false
 +++
 

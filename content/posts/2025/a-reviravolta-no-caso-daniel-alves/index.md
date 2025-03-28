@@ -2,7 +2,7 @@
 title = "A Reviravolta No Caso Daniel Alves"
 description = "O Tribunal Superior de Justiça da Catalunha absolveu Daniel Alves da condenação por agressão sexual, levantando dúvidas sobre a justiça do processo e gerando polêmica sobre sua culpa ou inocência."
 date = 2025-03-28T14:30:09-03:00
-tags = ['Blogging', 'Politics', 'Education', "Soccer"]
+tags = ['Blogging', 'Politics', 'Education', "Sports"]
 draft = false
 +++
 

@@ -2,7 +2,7 @@
 title = "I Hate the FIFA International Break"
 description = "The FIFA international break disrupts club soccer, causing scheduling problems, injuries, and financial burdens for clubs, with little accountability from governing bodies."
 date = 2025-03-25T22:00:56-03:00
-tags = ['Soccer', 'Blogging']
+tags = ['Sports', 'Blogging']
 draft = false
 +++
 

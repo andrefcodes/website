@@ -2,7 +2,7 @@
 title = 'Vinicius Jr.: an Example of Determination'
 description = 'A player with spectacular dribbles. Undoubtedly, the best Brazilian to play in one of the great European soccer leagues'
 date = 2022-06-09T16:20:47-03:00
-tags = ['Soccer']
+tags = ['Sports']
 draft = false
 +++
 
