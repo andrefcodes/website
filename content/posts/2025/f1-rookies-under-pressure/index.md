@@ -1,0 +1,25 @@
++++
+title = "F1 Rookies Under Pressure"
+description = "An analysis of the 2025 F1 rookies, praising Gabriel Bortoleto's standout performances in a weak car and criticizing Red Bull's harsh treatment of Liam Lawson."
+date = 2025-03-29T14:41:10-03:00
+tags = ['Blogging', 'Sports']
+draft = false
++++
+
+For many people like me, Formula 1 is the pinnacle of motorsport, and for the rookies joining the grid, it's a real pressure cooker where every mistake is magnified, and even success is scrutinized. This year — in addition to all the buzz surrounding Lewis Hamilton signing with Ferrari and the McLaren duo — the spotlight is shining on a new generation of young drivers, each with their own unique skills and challenges. Watching Andrea Kimi Antonelli, Liam Lawson, Oliver Bearman, Gabriel Bortoleto, Jack Doohan, and Isack Hadjar navigate their rookie seasons has been really cool. And while some thrive under pressure, others are already feeling the unforgiving nature of the paddock.
+
+I have to start by saying how impressed I am with Gabriel Bortoleto, my fellow countryman. Against all odds, driving what is undeniably the worst car on the grid, he's managed to deliver performances that are turning heads. It's easy to overlook someone when the car doesn't match their talent, but Bortoleto refuses to go unnoticed. His racecraft is mature for his age, and he has shown a remarkable ability to extract every ounce of performance from his car, consistently outperforming his teammate, Nico Hülkenberg.
+
+Meanwhile, Red Bull's junior program has once again proven to be brutal. Liam Lawson's journey this season has been a rollercoaster - and not in a good way. After just two extremely disappointing races (plus the sprint race), Red Bull decided to cut his stint short, demoting him back to the RB team and immediately promoting Yuki Tsunoda for the upcoming Japanese Grand Prix. In my opinion, Lawson deserved more time. Two races are simply not enough to judge someone adapting to a completely different car. Lawson showed promise during his substitute appearances last season, and there was reason to believe he could grow within the team. But Red Bull's appetite for immediate results has claimed another victim.
+
+The way Red Bull operates seems like a double-edged sword. On one hand, they give young talents a shot at Formula 1 while many other teams would leave these drivers waiting for years—unless they bring substantial financial backing. On the other hand, the pressure to deliver instant results is suffocating. It's a system that prioritizes short-term outcomes over long-term development. Lawson's treatment is just the latest chapter in Red Bull's long history of burning through their young drivers.
+
+Over at Mercedes-Benz, despite all the hype surrounding him, Andrea Kimi Antonelli has had a mixed start. You can see flashes of brilliance—moments where the car is on the edge and he handles it masterfully. But you can also see the mistakes that come from inexperience. It's a tough learning curve, and while I believe he has the talent to establish himself long-term, it will require patience.
+
+Oliver Bearman is another rookie under intense scrutiny. Coming through Ferrari's Driver Academy brings its own set of pressures. Expectations are high, and every race is a test to prove whether he can handle the weight of a future in the red car. Bearman showed potential last year when he had to step in for Carlos Sainz in Saudi Arabia, but the big question is whether he can turn that promise into consistent performances.
+
+Jack Doohan and Isack Hadjar fall somewhere in the middle of the rookie spectrum. Doohan carries the burden of a famous last name, but another rookie, Franco Colapinto, is waiting for his chance to take his spot. Doohan's aggressive driving style makes him prone to mistakes when he pushes too hard. Hadjar, on the other hand, seems to be taking a more gradual approach. He hasn't grabbed headlines like some of his peers, but aside from his first race, there's a quiet consistency to his performances that suggests he could surprise people if given time to develop.
+
+What has become clear when observing these rookies is how much their environment dictates their success. Bortoleto is thriving despite having an underperforming car because he has the freedom to race without the constant threat of being replaced hanging over his head. Lawson, by contrast, was under a microscope from day one, and the moment he stumbled, Red Bull showed no mercy. Formula 1 loves to talk about giving young drivers opportunities, but the reality is that few teams are willing to invest in a driver's long-term development.
+
+Watching these rookies navigate the high-pressure world of Formula 1 is a reminder that talent alone isn't enough. You need the right team, the right timing, and a little bit of luck. But most importantly, you need people around you who are willing to invest in your potential.
