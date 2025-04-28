@@ -55,8 +55,8 @@ timeZone = 'America/Sao_Paulo'
 
 [permalinks]
   posts = '/posts/:slug/'
-  notes = '/notes/:filename/'
-  pages = '/:filename'
+  notes = '/notes/:contentbasename/'
+  pages = '/:contentbasename/'
 
 [privacy]
   [privacy.youtube]
