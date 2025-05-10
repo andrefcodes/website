@@ -10,7 +10,7 @@ See:
 
 * [Posts RSS feed](https://abf.li/feed.xml) / [Notes RSS Feed](https://abf.li/notes.xml)
 
-* [Follow me on Mastodon](https://mas.to/@abf)
+* [Follow me on the Fediverse](https://social.abf.li/@andre)
 
 # License
 
