@@ -42,4 +42,4 @@ Most importantly, you can communicate between instances regardless of where thei
 
 Lately, I've been in a movement to limit my access to Mastodon, so I can focus on my family, or things like reading and studying. Although I don't toot much, my account is active and I try to catch up monthly on what's going on there.
 
-Follow me on Mastodon: **{{< contactMastodon >}}**
+Follow me on the Fediverse: **{{< contactFediverse >}}**
