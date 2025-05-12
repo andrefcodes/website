@@ -50,7 +50,7 @@
     <id>{{ .Permalink }}</id>
     <updated>{{ .PublishDate.Format "2006-01-02T15:04:05-03:00" | safeHTML }}</updated>
     <summary>{{ .Description | transform.XMLEscape | safeHTML }}</summary>
-    {{- $contact := printf "<p>~ Thanks for reading this post via RSS!<br>Let me know your thoughts by leaving a message via <a href=\"mailto:%q ?subject=Re: %q\">Email</a> or the <a href=\"%q\">Fediverse</a>.</p>" .Site.Params.User.email .Title .Site.Params.User.fediverseURL | transform.XMLEscape | safeHTML }}
+    {{- $contact := printf "<p>~ Thanks for reading this post via RSS!<br>Let me know your thoughts by leaving a message via <a href=\"mailto:%s ?subject=Re: %s\">Email</a> or the <a href=\"%s\">Fediverse</a>.</p>" .Site.Params.User.email .Title .Site.Params.User.fediverseURL | transform.XMLEscape | safeHTML }}
     <content type="html">{{ .Content | transform.XMLEscape | safeHTML }}{{ with $contact }}{{ . }}{{ end }}</content>
     <author>
       <name>{{ $authorName }}</name>
