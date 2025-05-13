@@ -19,14 +19,6 @@
 <link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.rssFeed | absURL }}" title="{{ .Site.Title }}'s Posts Feed">
 <link rel="alternate" type="application/rss+xml" href="{{ .Site.Params.General.notesRssFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
 
-{{"<!-- JSON Feed -->" | safeHTML}}
-<link rel="alternate" type="application/feed+json" href="{{ .Site.Params.General.jsonFeed | absURL }}" title="{{ .Site.Title }}'s Posts Feed">
-<link rel="alternate" type="application/feed+json" href="{{ .Site.Params.General.notesJsonFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
-
-{{"<!-- Atom Feed -->" | safeHTML}}
-<link rel="alternate" type="application/atom+xml" href="{{ .Site.Params.General.atomFeed | absURL }}" title="{{ .Site.Title }}'s Posts Feed">
-<link rel="alternate" type="application/atom+xml" href="{{ .Site.Params.General.notesAtomFeed | absURL }}" title="{{ .Site.Title }}'s Notes Feed">
-
 {{"<!-- Blogroll -->" | safeHTML }}
 <link rel="blogroll" type="text/xml" href="{{ "/blogroll.opml" | absURL }}">
 
