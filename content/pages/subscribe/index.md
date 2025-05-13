@@ -11,14 +11,6 @@ draft = false
 
 - [Posts Feed](/feed.xml)
 - [Notes Feed](/notes.xml)
+
+## Fediverse
 - [Fediverse Feed](https://social.abf.li/@andre/feed.rss)
-
-## ATOM
-
-- [Posts Feed](/posts.atom)
-- [Notes Feed](/notes.atom)
-
-## JSON
-
-- [Posts Feed](/posts.json)
-- [Notes Feed](/notes.json)
