@@ -42,7 +42,7 @@
       "url": {{ $element.Permalink | jsonify }},
       "summary": {{ $element.Description | jsonify }},
       {{- $contact := printf "<p>~ Thanks for reading this post via RSS!<br>Let me know your thoughts by leaving a message via <a href=\"mailto:%s ?subject=Re: %s\">Email</a> or the <a href=\"%s\">Fediverse</a>.</p>" .Site.Params.User.email .Title .Site.Params.User.fediverseURL | transform.XMLEscape | safeHTML }}
-      "content_html": "{{ $element.Content }}{{ $contact }}",
+      "content_html": {{ printf "%q%q" $element.Content $contact | jsonify }},
       "date_published": {{ $element.Date.Format "2006-01-02T15:04:05-03:00" | jsonify }},
       "tags": [
       {{- with .Params.tags -}}
