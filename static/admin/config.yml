@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: a-franca/website
+  repo: andrefcodes/website
   branch: main
   base_url: https://sveltia-cms-auth.abf-li.workers.dev
   commit_messages:
