@@ -24,6 +24,7 @@ timeZone = 'America/Sao_Paulo'
     tagline = 'A technology enthusiast'
     rssFeed = '/feed.xml'
     notesRssFeed = '/notes.xml'
+    combinedRssFeed = '/posts+notes.xml'
     sitemap = '/sitemap.xml'
     sourceCode = 'https://github.com/andrefcodes/website'
     wordsPerMinute = 200
@@ -58,7 +59,7 @@ timeZone = 'America/Sao_Paulo'
     privacyEnhanced = true
 
 [outputs]
-  home = ['html', 'rss', 'rssnotes','blogroll']
+  home = ['html', 'rss', 'rssnotes', 'rsscombined', 'blogroll']
   section = ['html']
   taxonomy = ['html']
   term = ['html']
@@ -71,6 +72,10 @@ timeZone = 'America/Sao_Paulo'
     name = "RSSNotes"
     mediaType = "application/rss+xml"
     baseName = "notes"
+  [outputFormats.RSSCombined]
+    name = "RSSCombined"
+    mediaType = "application/rss+xml"
+    baseName = "posts+notes"
   [outputFormats.sitemap]
     mediatype = "application/xml"
     basename = "sitemap"
