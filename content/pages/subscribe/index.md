@@ -1,7 +1,7 @@
 +++
 title = "Subscribe"
 description = "Subscribe to my RSS Feeds"
-date = 2025-05-10T23:15:11-03:00
+date = 2025-05-31T00:10:11-03:00
 draft = false
 +++
 
@@ -11,6 +11,7 @@ draft = false
 
 - [Posts Feed](/feed.xml)
 - [Notes Feed](/notes.xml)
+- [Combined Feed](/posts+notes.xml)
 
 ## Fediverse
 - [Fediverse Feed](https://social.abf.li/@andre/feed.rss)
